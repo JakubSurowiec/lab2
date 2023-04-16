@@ -1,0 +1,117 @@
+* {
+	box-sizing: border-box;
+  }
+table {
+	border: 1px solid ;
+	border-collapse: collapse;
+    width: 100px;
+	height: 100px;
+}
+td
+{
+    border: solid 1px;
+}
+
+body
+{
+	margin: 0;
+	padding: 0;
+	font-family: "Inter", sans-serif;
+}
+h1
+{
+font-size: 50px;
+}
+h4
+{
+font-size: 30px;
+}
+
+header {
+	position: sticky;
+	width: 100%;
+	top: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #fff;
+	box-shadow: 0 0 10px 2px #aaa;
+	padding: 20px 120px;
+	z-index: 100;
+	background-color: lightgray;
+  }
+  head nav {
+	display: block;
+  }
+  header nav ul {
+	list-style: none;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+  }
+  article div h2
+  {
+	margin: 0;
+	padding: 0;
+	color: #4c82ac;
+  }
+  article img {
+	object-fit: contain;
+	height: 200%;
+	object-position: center;
+  }
+  article,
+  section {
+	display: block;
+	padding: 0 120px;
+	font-size: 20px;
+  }
+
+  article {
+	position: relative;
+  }
+
+  main article::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+	height: 2px;
+	background-color: lightblue;
+  }
+  section:first-child {
+	height: calc(100vh - 80px);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: row;
+	text-align: left;
+  }
+  article {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: row;
+	padding: 150px 120px;
+  }
+  .article-element {
+	width: 50%;
+  }
+  article h3::after
+  {
+	content: "";
+	display: block;
+	width: 70px;
+	height: 7px;
+	background-color: #0070cc;
+	margin-top: 5px;
+  }
+
+  footer
+  {
+	position: sticky;
+  }
